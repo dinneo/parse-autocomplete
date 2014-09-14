@@ -2,7 +2,11 @@
   "name": "timofei7/parse-autocomplete",
   "version": "1.0.2",
   "description": "An autocomplete view for Parse SDK modified backbone.js",
-  "main": "src/parse.autocomplete.js",
+  "main": [
+		"src/parse.autocomplete.js",
+		"src/parse.autocomplete.css",
+		"src/parse.autocomplete.ielt8.css"
+	],
   "ignore": [
   ],
   "dependencies": {
