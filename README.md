@@ -4,11 +4,11 @@ An auto-complete widget built with Backbone.js
 
 ##Usage##
 Create a method that called `label` on your model. That method will be used for representation of model.
-     var Plugin = Parse.Model.extend({
-         label: function () {
-             return this.get("name");
-         }
-     });
+      var Plugin = Parse.Model.extend({
+          label: function () {
+              return this.get("name");
+          }
+      });
 
 
 ##And initialize the AutoCompleteView in your view.##
