@@ -1,8 +1,8 @@
 {
-  "name": "fatiherikli/backbone-autocomplete",
+  "name": "timofei7/parse-autocomplete",
   "version": "1.0.2",
-  "description": "An autocomplete view for backbone.js",
-  "main": "src/backbone.autocomplete-min.js",
+  "description": "An autocomplete view for Parse SDK modified backbone.js",
+  "main": "src/parse.autocomplete.js",
   "ignore": [
   ],
   "dependencies": {

@@ -1,4 +1,4 @@
-### Backbone.AutoCompleteView
+### Parse.AutoCompleteView
 
 An auto-complete widget built with Backbone.js
 
