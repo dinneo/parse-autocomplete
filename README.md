@@ -1,26 +1,35 @@
-### Parse.AutoCompleteView
+# Parse.AutoCompleteView #
 
-An auto-complete widget built with Backbone.js
+An auto-complete widget for the Parse.com JS SDK.
+Ported from one created for Backbone.js by
+[Fatih Erikli](https://github.com/fatiherikli/backbone-autocomplete "Fatih Erikli")
+
 
 ##Usage##
-Create a method that called `label` on your model. That method will be used for representation of model.
-      var Plugin = Parse.Model.extend({
-          label: function () {
-              return this.get("name");
-          }
-      });
+Create a `label` method in your Parse Object (aka backbone Model).
+<pre>
+var Plugin = Parse.Model.extend({
+  label: function () {
+    return this.get("name");
+  }
+});
+</pre>
 
 
-##And initialize the AutoCompleteView in your view.##
-    new AutoCompleteView({
-        input: $("#plugin"), // your input field
-        model: Plugin // your parse object
-    }).render();
+##Initialize the AutoCompleteView in your view.##
+<pre>
+new AutoCompleteView({
+  input: $("#plugin"), // your input field
+  model: Plugin // your parse class
+}).render();
+</pre>
+
 
 ##Configuration##
-Parameter	Type	Default	Description
-className	string	autocomplete	The class name of popup menu.
-wait	integer	300	The throttling value as milliseconds.
-minKeywordLength	integer	2	Minimum keyword length.
-queryParameter	string	query	The search parameter for back-end.
-onSelect	function	no-op	The callback function for selected item.
+Parameter | Type | Default | Description<br>
+--------- | ---- | ------- | ----------------------------
+className	| string  | autocomplete  | The class name of popup menu.
+wait | integer | 300 | The throttling value as milliseconds.
+minKeywordLength | integer | 2 | Minimum keyword length.
+queryParameter | string | query | The search parameter for back-end.
+onSelect | function | no-op | The callback function for selected item.
